@@ -228,10 +228,10 @@ dependencies {
     }
 
     // Libraries jarjar.
-    if (hasConfig("cibrary_version") && !config.cibrary_version.isEmpty()) {
-        implementation fg.deobf("org.crychicteam.cibrary:cibrary:${config.cibrary_version}")
-        jarJar(group: 'org.crychicteam', name: 'cibrary', version: "[${config.cibrary_version},)")
-    }
+//    if (hasConfig("cibrary_version") && !config.cibrary_version.isEmpty()) {
+//        implementation fg.deobf("org.crychicteam.cibrary:cibrary:${config.cibrary_version}")
+//        jarJar(group: 'org.crychicteam', name: 'cibrary', version: "[${config.cibrary_version},)")
+//    }
 
     if (hasConfig("l2damagetracker_version") && !config.l2damagetracker_version.isEmpty()) {
         implementation fg.deobf("dev.xkmc.l2damagetracker:l2damagetracker:${config.l2damagetracker_version}")
